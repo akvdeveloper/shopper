@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            
+            font-size: 20px;
+            color: white;
+            
+        }
+        img {
+            width: 100%;
+            position: relative;
+        }
+        .title {
+            position: absolute;
+            top: 100px;
+            left: 60px;
+            
+        }
+        .card:hover img {
+            transform: translate3d(10px, 0, 0);
+            transition: 2s;
+        }
+        img {
+            transform: translate3d(opx,0,0);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="./public/img/bags.jpg" alt="">
+        </div>
+        <div class="title">Latest Bags</div>
+    </div>
+</body>
+</html>

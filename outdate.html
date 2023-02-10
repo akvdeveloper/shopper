@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Shopper</title>
+    <style>
+       header {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px;
+        color: black;
+        font-family: Arial;
+
+       }
+
+       .brand-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: black;
+       }
+
+       nav span {
+        margin-right: 13px;
+        font-size: 18px;
+       }
+
+       .deals {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+
+       }
+
+       .card-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+       }
+
+       .card-1, .card-2, .card-3 {
+        height: 500px;
+        width: 100%;
+        color: white;
+        text-shadow: 5px 5px 2px black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        
+       }
+
+       .card-1 {
+            background-image: url("./public/img/women.jpg");
+            background-size: cover;
+       }
+       .card-2 {
+            background-image: url("./public/img/men.jpg");
+            background-size: cover;
+       }
+       .card-3 {
+            background-image: url("./public/img/kids.jpg");
+            background-size: cover;
+       }
+       .box {
+        padding-top: 150px;
+
+       }
+       
+       .sh-button {
+        padding-top: 100px;
+        
+       }
+       .sh-button button{
+        height: 50px;
+        width: 200px;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial;
+        
+       }
+       .sh-button .bi {
+         margin-left: 10px;
+       }
+
+      .cart-policy {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+      }
+      
+      .policy-icon {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: brown;
+      }
+      .line {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        color: gray;
+      }
+
+      .new-collection {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+
+      
+      
+    </style>
+</head>
+<body>
+    <!--Shopper Header-->
+    <header>
+        <div><span class="brand-name">Shopper.</span></div>
+        
+        <div>
+            <nav>
+                <span>Home</span>
+                <span>Catelog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        
+        <div>
+            <nav>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </nav>
+        </div>
+    </header>
+    <div class="deals"><span>⚡️ HAPPY HOLIDAY DEALS ON EVERYTHING ⚡️</span></div>
+    <!--Shopper Header End -->
+
+    <!--Shopper Main Section-->
+    <main>
+        <!--Shopper Banner Section-->
+        <div class="card-container">
+            <div class="card-1">
+                <div class="box">
+                    <h2>Women</h2>
+                </div>
+                <div class="sh-button"><button>Shop Women<span class="bi bi-arrow-right"></span></button></div>
+            </div>
+
+            <div class="card-2">
+                <div class="box">
+                    <h2>Men</h2>
+                </div>
+                <div class="sh-button"><button>Shop Men<span class="bi bi-arrow-right"></span></button></div>
+            </div>
+
+            <div class="card-3">
+                <div class="box">
+                    <h2>Kids</h2>
+                </div>
+                <div class="sh-button"><button>Shop Kids<span class="bi bi-arrow-right"></span></button></div>
+            </div>
+        </div>
+       
+        <!--Shopper Banner End-->
+
+        <!--Shoping Benefit Section-->
+
+       <div>
+            <div class="cart-policy">
+                <div class="policy-icon"><span class="bi bi-truck"></span></div>
+                <div>
+                    <h4>FREE SHIPPING</h4>
+                    <p>From all orders over &#36 100</p>
+                </div>
+
+                <div class="policy-icon"><span class="bi bi-arrow-left-right"></span></div>
+                <div>
+                    <h4>FREE RETURNS</h4>
+                    <p>Return money within 30 days</p>
+                </div>
+
+                <div class="policy-icon"><span class="bi bi-lock"></span></div>
+                <div>
+                    <h4>SECURE SHOPPING</h4>
+                    <p>You're in safe hands</p>
+                </div>
+
+                <div class="policy-icon"><span class="bi bi-tag"></span></div>
+                <div>
+                    <h4>OVER 10,000 STYLES</h4>
+                    <p>We have everything you need</p>
+                </div>
+            
+        </div> 
+
+        <!--Shoping Benefit Section End-->
+        
+        <!--New Collection Start-->
+        <div class="new-collection">
+            <p>NEW COLLECTION</p>
+            <h1>Best Picks 2019</h1>
+            <p>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.</p>
+        </div>
+        <!--New Collection END-->
+
+        <style>
+            .card-fashion {
+                display: grid;
+                grid-template-columns: 4fr 8fr;
+                background-color: black;
+                height: 400px;
+                font-family: Arial;
+            }
+            .box-bags, .box-shirt {
+                border: 10px solid rgb(255, 255, 255);
+            }
+
+            .box-bags {
+                background-image: url("/public/img/bags.jpg");
+                background-size: cover;
+                text-align: center;
+                color: white;
+                text-shadow: 3px 3px 2px black;
+                font-size: 20px;
+                
+            }
+            .box-shirt {
+                background-image: url("public/img/pshirt.jpg");
+                background-size: cover;
+            }
+
+            .box-bags h2 {
+               
+                margin-top: 120px;
+            }
+            .box-bags p {
+                font-size: 20px;
+                color: white;
+                
+            }
+            .box-shirt h2 {
+                margin-top: 120px;
+                margin-left: 50px;
+                font-size: 30px;
+                text-shadow: 3px 3px 2px white;
+            }
+            .box-shirt p {
+                margin-left: 50px;
+                font-size: 20px;
+                text-shadow: 2x 2px 1px white;
+                color: black;              
+            }
+            .box-shirt span {
+                padding-left: 5px;
+            }
+        </style>
+
+        <!--New Collection Banner Start-->
+        <div class="card-fashion">
+            <div class="box-bags">
+                <h2>Bags Collection</h2>
+                <p>Shop Now <span class="bi bi-arrow-right"></span></p>
+            </div>
+            <div class="box-shirt">
+                <h2>Printed men&#39;s Shirt</h2>
+                <p>Shop Now <span class="bi bi-arrow-right"></span></p>
+            </div>
+        </div>
+
+        <!--New Collection Banner End-->
+        <style>
+            .card-dress {
+                display: grid;
+                grid-template-columns:8fr 4fr ;
+                height: 400px;
+                font-family: Arial;
+                font-size: 18px;
+            }
+            .box-dress-1, .box-dress-2 {
+                border: 10px solid white;
+                
+
+            }
+            .box-dress-1 {
+                background-image: url("./public/img/women-col.jpg");
+                background-size: cover;
+                
+            }
+            .box-dress-2 {
+                background-image: url("./public/img/sweetshirt.jpg");
+                background-size: cover;
+            }
+
+            .box-dress-1 h2 {
+                margin-top: 160px;
+                margin-left: 50px;
+                text-shadow: 2px 2px 1px white;
+            }
+
+            .box-dress-2 h2 {
+                margin-top: 160px;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 1px black;
+            }
+
+            .box-dress-2 p {
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 1px black;
+            }   
+
+
+            .box-dress-1 p{
+               margin-left: 50px;
+               color: black;
+               text-shadow: 2px 2px 1px white;
+
+            }
+
+            
+            .box-dress-1 span, .box-dress-2 span{
+               
+                margin-left: 5px;
+            }
+
+        </style>
+
+        <!--New Collection Banner 2 Start-->
+        <div class="card-dress">
+            <div class="box-dress-1">
+                <h2>Basic women&#39;s Dress</h2>
+                <p>Shop Now <span class="bi bi-arrow-right"></span></p>
+            </div>
+            <div class="box-dress-2">
+                <h2>Sweetshirts</h2>
+                <p>Shop Now <span class="bi bi-arrow-right"></span></p>
+            </div>
+        </div>
+
+        <!--New Collection Banner 2 End-->
+
+        <style>
+            .monthSeller {
+                text-align: center;
+                font-family: Arial;
+                padding-top: 50px;
+            }
+            .sellerMenu {
+                display: flex;
+                justify-content: center; 
+                padding-top: 5px; 
+                  
+            }
+
+            .menu-text {
+                margin-left: 35px;
+            }
+        </style>
+
+        <!--Top Month Seller Start-->
+       <div class="monthSeller">
+            <div><h1>Top months Sellers</h1></div>
+            
+            <nav class="sellerMenu">
+                <div class="menu-text"><a href="#">Women</a></div>
+                <div class="menu-text"><a href="#">Men</a></div>
+                <div class="menu-text"><a href="#">Kids</a></div>
+            </nav>
+            
+       </div>
+
+       <!--Top Month Seller End-->
+
+       <!--Top Month Seller Iframe Start-->
+
+       <div>
+            <iframe src="" frameborder="0"></iframe>
+       </div>
+
+
+       <!--Top Month Seller Iframe End-->
+
+
+
+
+
+        
+            <style>
+                .product-card {
+                    width: 250px;
+                    font-family: Arial;
+                }
+                .card-image-top {
+                    width: 100%;
+                    height: 250px;
+                    padding-bottom: 10px;
+                }
+                .card-header {
+                    line-height: 1.5px;
+                }
+
+                .product-card-2 {
+                    background-image: url("./public/img/women-sandals.jpg");
+                    background-size: cover;
+                    width: 250px;
+                    height: 250px;
+                    
+                }
+                .product-card-3 {
+                    background-image: url("./public/img/menShooes.JPG");
+                    background-size: cover;
+                    width: 250px;
+                    height: 250px;
+                    
+                }
+
+              
+                
+                .product-card-2 p {
+                    background-color: white;
+                    width: 40px;
+                    height: 20px;
+                    padding-left: 9px;
+                    color: black;
+                    font-size: 12px;
+                    padding-top: 6px;
+                    
+                }
+                .product-card-2 div {
+                    padding-top: 10px;
+                    
+                   
+                }
+                
+                .product-card-3 p {
+                    background-color: black;
+                    width: 40px;
+                    height: 20px;
+                    padding-left: 9px;
+                    color: white;
+                    font-size: 12px;
+                    padding-top: 6px;
+                }
+                .product-card-3 div {
+                    padding-top: 10px;
+                }
+                .product-container {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                }
+            </style>
+        
+        <!--Product Card Start-->
+
+        <div class="product-container">
+            
+            <div class="product-card-1">
+                <div class="product-card-2">
+                        <div><p>NEW</p></div>
+                </div>
+                
+                <div class="card-header">
+                    <p>Shoes</p>
+                    <h4>Leather mid-heal Sandals</h4>
+                    <span>&dollar;129.00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./public/img/Wdress-1.JPG" class="card-image-top">
+                <div class="card-header">
+                    <p>Dresses</p>
+                    <h4>Cotton floral printed Dress</h4>
+                    <span>&dollar;40.00</span>
+                </div>
+
+            </div>
+            
+            <div class="product-card-1">
+                <div class="product-card-3">
+                        <div><p>SALE</p></div>
+                </div>
+                
+                <div class="card-header">
+                    <p>Shoes</p>
+                    <h4>Leather Sneakers</h4>
+                    <span><strike>&dollar;90.00</strike> &dollar;85.00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./public/img/Wdress-2.JPG" class="card-image-top">
+                <div class="card-header">
+                    <p>Tops</p>
+                    <h4>Croped cotton Tops</h4>
+                    <span>&dollar;129.00</span>
+                </div>
+
+            </div>
+        </div>
+        <!--Product Card End-->
+        <style>
+                .product-card-5 {
+                    background-image: url("./public/img/newLsandal.JPG");
+                    background-size: cover;
+                    width: 250px;
+                    height: 250px;
+                    
+                }
+                .product-card-6 {
+                    background-image: url("./public/img/bags2.JPG");
+                    background-size: cover;
+                    width: 250px;
+                    height: 250px;
+                    
+                }
+
+                .product-card-6 p {
+                    background-color: black;
+                    width: 40px;
+                    height: 20px;
+                    padding-left: 9px;
+                    color: white;
+                    font-size: 12px;
+                    padding-top: 6px;
+                }
+                .product-card-6 div {
+                    padding-top: 10px;
+
+                }
+
+                .product-card-5 p {
+                    background-color: white;
+                    width: 40px;
+                    height: 20px;
+                    padding-left: 9px;
+                    color: black;
+                    font-size: 12px;
+                    padding-top: 6px;
+                    
+                }
+                .product-card-5 div {
+                    padding-top: 10px;
+                    
+                   
+                }
+
+                .product-container-2 {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    padding-bottom: 100px;
+                }
+            
+        </style>
+        
+        <!--Second Product Card Start-->
+
+        <div class="product-container-2">
+            
+            <div class="product-card">
+                <img src="./public/img/Flowreldress.JPG" class="card-image-top">
+                <div class="card-header">
+                    <p>Dresses</p>
+                    <h4>Floral print midi Dress</h4>
+                    <span>&dollar;50.00</span>
+                </div>
+
+            </div>
+
+            <div class="product-card-1">
+                <div class="product-card-6">
+                        <div><p>SALE</p></div>
+                </div>
+                
+                <div class="card-header">
+                    <p>Bags</p>
+                    <h4>Seude cross body Bag</h4>
+                    <span><strike>&dollar;79.00</strike> &dollar;129.00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./public/img/printedskirt.JPG" class="card-image-top">
+                <div class="card-header">
+                    <p>Skirts</p>
+                    <h4>Printed A-Line Skirt</h4>
+                    <span>&dollar;79.00</span>
+                </div>
+
+            </div>
+
+            <div class="product-card-1">
+                <div class="product-card-5">
+                        <div><p>NEW</p></div>
+                </div>
+                
+                <div class="card-header">
+                    <p>Shoes</p>
+                    <h4>Heel strappy Sandals</h4>
+                    <span>&dollar;90.00</span>
+                </div>
+            </div>
+            
+            
+        </div>
+        <!--Second Product Card End-->
+
+        <style>
+            .discover {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                line-height: 0px;
+                
+            }
+            .discover hr {
+                width: 200px;
+            }
+        </style>
+
+        <!--Discover Start-->
+
+            <div class="discover">
+                <div>
+                    <h3>Discover more</h3>
+                    <hr>
+                </div>
+            </div>
+        <!--Discover End-->
+
+        <style>
+            .discover-banner {
+                background-image: url("./public/img/discover-banner.JPG");
+                background-size: cover;
+                width: 100%;
+                height: 500px;
+                padding-top: 50px;
+            }
+        </style>
+
+        <!--Discover Banner Start-->
+            <div class="discover-banner">
+                <div>
+                    <div></div>
+                    <div></div>
+                    
+
+                </div>
+            </div>
+        <!--Discover Banner END-->
+        
+        
+
+    </main>
+
+    <!--Shopper Foother-->
+    <footer>
+        
+    </footer>
+</body>
+</html>
